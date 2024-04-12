@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--link Bootstrap and custom CSS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="secondary.css">
+    <title>Destravel</title>
+</head>
+
+<body class="bg-custom">
+    <header>
+        <!--Create Nav bar-->
+        <nav class="navbar navbar-expand-sm navBar-CustomBG fixed-top">
+            <div class="container-fluid">
+                <!--Show Logo with Brand Name-->
+                <a class="navbar-brand" href="#"><img src="DestravelLogo.png" width="50" height="50" class="me-2" alt="Destravel Logo">Destravel</a>
+                <!--Create unordered list for pages-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About&nbspUs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact&nbspUs</a></li>
+                    </ul>
+                    <!--Create Serch input field and button-->
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Main banner with overlay text-->
+        <div class="main-banner position-relative">
+            <img src="DestravelMain.png" class="d-block w-100" alt="Main Image 1">
+            <div class="banner-overlay position-absolute top-0 end-0" id="imgBanner">
+                <div class="banner-content text-white text-center d-flex flex-column justify-content-center align-items-center"
+                    style="height: 100%;">
+                    <h2 class="display-3">Plan simpler, Travel&nbspmore</h2>
+                    <p class="h5">Skip the hassle of planning and enjoy your travels worry-free</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Responsive partner section-->
+        <div class="partner-section container-fluid text-center bg-custom-secondary pb-5">
+            <h1 class="py-2 display-1">Our Partners</h1>
+            <div class="row justify-content-center">
+                <div class="pt-2 col-6 col-sm-4 col-md-2"><img src="TinyHouse.png" alt="Tiny House" class="img-fluid">
+                </div>
+                <div class="pt-2 col-6 col-sm-4 col-md-2"><img src="TreeHouse.png" alt="Tree House" class="img-fluid">
+                </div>
+                <div class="pt-2 col-6 col-sm-4 col-md-2"><img src="Paradise.png" alt="Paradise" class="img-fluid">
+                </div>
+                <div class="pt-2 col-6 col-sm-4 col-md-2"><img src="Tropicius.png" alt="Tropicius" class="img-fluid">
+                </div>
+                <div class="pt-2 col-6 col-sm-4 col-md-2"><img src="OpenTrip.png" alt="Open Trip" class="img-fluid">
+                </div>
+                <div class="pt-2 col-6 col-sm-4 col-md-2"><img src="Calipao.png" alt="Calipao" class="img-fluid"></div>
+            </div>
+        </div>
+
+        <!--Brand intoduction with Image-->
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xxl-8">
+                    <img src="DestravelMain2.png" alt="Main Image 2" class="img-xxl">
+                </div>
+                <div class="col-12 col-sm-12 col-xxl-4 text-center text-xxl-start" id="jumboTron">
+                    <h1 class="display-2 pb-4">Why travel with us?</h1>
+                    <p class="display-6 fs-4">With over <strong>10K+</strong> satisfied travelers ever since we launched
+                        in early
+                        2023, Destravel has become the most
+                        popular travel site for avid travels looking for the <br><strong>BEST</strong> adventure with
+                        the lowest prices.</p>
+                    <p class="display-6 fs-4">Destravel provides travels with a wide range of destinations ranging from
+                        the most popular to the
+                        less
+                        known places with 100% accurate costs in 1 site.</p>
+                    <p class="display-6 fs-4">Explore all the wide range of travel destinations now at the
+                        <strong>CHEAPEST</strong> prices!
+                    </p>
+                    <a href="aboutus.html" class="btn btn-primary btn-lg btn-custom" role="button">View more</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Showcase of top packages-->
+        <div class="container-fluid bg-custom-secondary pb-5 px-4">
+            <div class="row">
+                <h1 class="display-2 text-center pt-5">Seasonal Packages</h1>
+
+                <!--Creation of card 1-->
+                <div class="pt-5 col-12 col-sm-12 col-xl-4">
+                    <div class="card shadow">
+                        <img src="BoracayM.png" class="card-img-top" alt="BoracayM">
+                        <div class="card-body">
+                            <h5 class="card-title display-6 fw-bold">Boracay</h5>
+                            <p class="card-text">
+                                <strong>Rating:</strong>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                4.5/5
+                            </p>
+                            <p class="card-text">What better way to spend your summer than going to one of the best
+                                beach this world can offer you -
+                                from water activies to high elements and of course night parties!</p>
+                            <p class="card-text"><strong>Price:</strong> starting from <span
+                                    class="text-primary">$500</span> / <span class="text-secondary"><s>$800</s></span>
+                            </p>
+                            <a href="booking.html" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Creation of card 2-->
+                <div class="pt-5 col-12 col-sm-12 col-xl-4">
+                    <div class="card shadow">
+                        <img src="GrandCanyonM.png" class="card-img-top" alt="GrandCanyonM">
+                        <div class="card-body">
+                            <h5 class="card-title display-6 fw-bold">Grand Canyon</h5>
+                            <p class="card-text">
+                                <strong>Rating:</strong>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                5/5
+                            </p>
+                            <p class="card-text">What better way to spend your summer than going to one of the best
+                                beach this world can offer you -
+                                from water activies to high elements and of course night parties!</p>
+                            <p class="card-text"><strong>Price:</strong> starting from <span
+                                    class="text-primary">$1200</span> / <span class="text-secondary"><s>$1800</s></span>
+                            </p>
+                            <a href="booking.html" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Creation of card 3-->
+                <div class="pt-5 col-12 col-sm-12 col-xl-4">
+                    <div class="card shadow">
+                        <img src="StoneHedgeM.png" class="card-img-top" alt="StoneHedgeM">
+                        <div class="card-body">
+                            <h5 class="card-title display-6 fw-bold">Stone Hedge</h5>
+                            <p class="card-text">
+                                <strong>Rating:</strong>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star"></i>
+                                4/5
+                            </p>
+                            <p class="card-text">What better way to spend your summer than going to one of the best
+                                beach this world can offer you -
+                                from water activies to high elements and of course night parties!</p>
+                            <p class="card-text"><strong>Price:</strong> starting from <span
+                                    class="text-primary">$700</span> / <span class="text-secondary"><s>$1000</s></span>
+                            </p>
+                            <a href="booking.html" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Responsive footer-->
+    <!--Main list-->
+    <footer class="py-5 px-5 footer-CustomBG">
+        <div class="row">
+            <div class="col-12 col-md-2 mb-3">
+                <ul class="nav flex-column" id="footList">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">BECOME A MEMBER</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">HOT DEALS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">INSURANCE</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">LOYALTY PROGRAM</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">REFERRALS</a></li>
+                </ul>
+            </div>
+
+            <!--Get Help List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>Get Help</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bookings</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cancellations</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Payment Options</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--About Destravel List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>About Destravel</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Story</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">News</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!--Email Sign up-->
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-custom-secondary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Company Registration-->
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 ps-5 my-4 border-top">
+            <p>© 2023 Destravel Pte. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!--
+    Image References: https://www.canva.com/design/DAFqqFbNlfs/Lb3i1lxDKbHL36MP0Yd6UQ/view?utm_content=DAFqqFbNlfs&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel
+    Logo References: https://www.canva.com/design/DAFqvxIJD5I/jOOrhFpRROnqcJ2tgNvOHA/view?utm_content=DAFqvxIJD5I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+-->

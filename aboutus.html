@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--link Bootstrap and custom CSS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="secondary.css">
+    <title>Destravel</title>
+</head>
+
+<body class="bg-custom">
+    <header>
+        <!--Create Nav bar-->
+        <nav class="navbar navbar-expand-sm navBar-CustomBG fixed-top">
+            <div class="container-fluid">
+                <!--Show Logo with Brand Name-->
+                <a class="navbar-brand" href="#"><img src="DestravelLogo.png" width="50" height="50" class="me-2" alt="Destravel Logo">Destravel</a>
+                <!--Create unordered list for pages-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">About&nbspUs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact&nbspUs</a></li>
+                    </ul>
+                    <!--Create Serch input field and button-->
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Main Image with text overlay-->
+        <div class="main-banner position-relative">
+            <img src="JohnLenett.png" class="d-block w-100" alt="Main Image 1">
+            <div class="banner-overlay position-absolute top-0 end-0" id="imgBanner">
+                <div class="banner-content text-white text-center d-flex flex-column justify-content-center align-items-center"
+                    style="height: 100%;">
+                    <h2 class="display-3 fw-medium">Our Story</h2>
+                    <p class="h5">Learn more about how Destravel was founded</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Image with Description-->
+        <div class="container my-5 text-center">
+            <h1 class="display-4 fw-bold text-body-emphasis">What got us started?</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Destravel was founded back in 2020 by our founder, John Lenett, who was a vivid
+                    traveler who enjoyed exploring the different culture and enviroment each country has to.</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="John Lenett2.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="John Lenett2"
+                        width="700" height="500">
+                </div>
+            </div>
+        </div>
+
+        <!--Image with Description-->
+        <div class="container my-5 text-center">
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">John was always up for an <strong>ADEVENTURE</strong> even in his early days as a student, but due to budget constraints, his adventure were restricted to his budget and this did not sit right with him</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="Adventure.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Adventure"
+                        width="700" height="500">
+                </div>
+            </div>
+        </div>
+
+        <!--Image with Description-->
+        <div class="container my-5 text-center">
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">And thus, his journey began to find ways to <strong>MAXIMIZE</strong> his adventure given the budget he had or <strong>MINIMIZE</strong> his output while still having the full experience of his adeventures.</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="Efficiency.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Efficiency"
+                        width="700" height="500">
+                </div>
+            </div>
+        </div>
+
+        <!--Image with Description side by side-->
+        <div class="container lg-xxl-8 px-4 pb-5 border-top">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <img src="PickUs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="PickUs">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Why Destravel?</h1>
+                    <p class="lead">With the creation of Destravel, our sole purpose is to <strong>ENABLE</strong> like minded travelers to have an easy way of maximising both their budget and travel experience</p>
+                    <p class="lead">Destravel is your one stop place to view the best travel adventure places and activities at a very <strong>LOW COST</strong> as well as your accomodation and transportation.</p>
+                    <p class="lead">Let us save you the hussle and worry of not being able to save enough or miss out on the adventure of a <strong>LIFETIME!</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Image with Description side by side-->
+        <div class="container lg-xxl-8 px-4 my-5 bg-custom-secondary">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <img src="Places.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Places">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Destinations curated just for&nbspyou!</h1>
+                    <p class="lead">Browse amongst <strong>100+</strong> destinations travel made especially for you. Package includes <strong>top rated</strong> activities and accomodation!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="destinations.html"><button type="button" class="btn btn-custom btn-lg px-4 me-md-2">Destinations</button></a>
+                        <a href="booking.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Booking</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+<!--Responsive footer-->
+    <!--Main list-->
+    <footer class="py-5 px-5 footer-CustomBG">
+        <div class="row">
+            <div class="col-12 col-md-2 mb-3">
+                <ul class="nav flex-column" id="footList">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">BECOME A MEMBER</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">HOT DEALS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">INSURANCE</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">LOYALTY PROGRAM</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">REFERRALS</a></li>
+                </ul>
+            </div>
+
+            <!--Get Help List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>Get Help</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bookings</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cancellations</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Payment Options</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--About Destravel List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>About Destravel</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Story</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">News</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!--Email Sign up-->
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-custom-secondary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Company Registration-->
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 ps-5 my-4 border-top">
+            <p>© 2023 Destravel Pte. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</html>
+
+<!--
+    Image reference:https://www.canva.com/design/DAFqqFbNlfs/Lb3i1lxDKbHL36MP0Yd6UQ/view?utm_content=DAFqqFbNlfs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+    Image (banner) reference:https://www.canva.com/design/DAFqx_BXkt0/l7Cp9ZIut34MTfEPehGqdw/view?utm_content=DAFqx_BXkt0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+-->

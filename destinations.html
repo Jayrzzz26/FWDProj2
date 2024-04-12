@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--link Bootstrap and custom CSS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="secondary.css">
+    <title>Destravel</title>
+</head>
+
+<body>
+    <header>
+        <!--Create Nav bar-->
+        <nav class="navbar navbar-expand-sm navBar-CustomBG fixed-top">
+            <div class="container-fluid">
+                <!--Show Logo with Brand Name-->
+                <a class="navbar-brand" href="#"><img src="DestravelLogo.png" width="50" height="50" class="me-2" alt="Destravel Logo">Destravel</a>
+                <!--Create unordered list for pages-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About&nbspUs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact&nbspUs</a></li>
+                    </ul>
+                    <!--Create Serch input field and button-->
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--banner Image-->
+        <section class="container-fluid main-banner py-5 text-center position-relative bg-img-d">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light text-custom1">Destination Packages</h1>
+                    <p class="lead text-custom1">A curated list of the top most visited attractions across the globe in one scroll.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="py-5 bg-custom">
+            <!--Responsive group of cards-->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Seoul.png" class="card-img-top" alt="Seoul" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Get the best 360 view of Seoul, be amazed at the wonderful architectures and enjoy the view with a glass of wine.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Kyoto.png" class="card-img-top" alt="Kyoto" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Visit Kyoto, Japan and experience history and culture brought to life with Fushimi Inari Taisha. A timeless masterpiece.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="MtBatur.png" class="card-img-top" alt="MtBatur" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Mt Batur is one of Bal'is top attraction, the journey to the top is not easy but the magnificent view at the top is rewarding.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="ChiangMai.png" class="card-img-top" alt="Chiang Mai" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Thailand is known for it's exotic street food and one that is not to be missed, a life changing snack that you must try.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Disneyland.png" class="card-img-top" alt="Disneyland" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Hong Kong Disneyland has been the most go to theme parks around the world, featuring all disney characters and disney themed rides.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$$$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="SunMoonLake.png" class="card-img-top" alt="SunMoonLake" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">If you're a nature enthusiast, this place is a must visit, the peaceful ambience and the wonderous view of the lake will leave you astounded.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="BigBen.png" class="card-img-top" alt="BigBen" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">One of London's most iconic architecture, learn more about the history behind the clock and unravel the mystery behind the story.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Moscow.png" class="card-img-top" alt="Seoul" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Located at the center of Russia, Moscow is filled with it's thriving people beaming of laughter joy and learn more about the people.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="Paris.png" class="card-img-top" alt="Paris" width="100%" height="225">
+                            <div class="card-body">
+                                <p class="card-text">Featured in movies, see the spectacular Eiffel Tower in person and live your dream of how it feels like to be in a movie.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="booking.html"><button type="button" class="btn btn-sm btn-custom">View</button></a>
+                                    <small class="text-body-secondary">$$</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+<!--Responsive footer-->
+    <!--Main list-->
+    <footer class="py-5 px-5 footer-CustomBG">
+        <div class="row">
+            <div class="col-12 col-md-2 mb-3">
+                <ul class="nav flex-column" id="footList">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">BECOME A MEMBER</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">HOT DEALS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">INSURANCE</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">LOYALTY PROGRAM</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">REFERRALS</a></li>
+                </ul>
+            </div>
+
+            <!--Get Help List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>Get Help</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bookings</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cancellations</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Payment Options</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--About Destravel List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>About Destravel</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Story</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">News</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!--Email Sign up-->
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-custom-secondary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Company Registration-->
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 ps-5 my-4 border-top">
+            <p>© 2023 Destravel Pte. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</html>
+
+<!--
+    Image References: https://www.canva.com/design/DAFqqFbNlfs/Lb3i1lxDKbHL36MP0Yd6UQ/view?utm_content=DAFqqFbNlfs&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel
+    Logo References: https://www.canva.com/design/DAFqvxIJD5I/jOOrhFpRROnqcJ2tgNvOHA/view?utm_content=DAFqvxIJD5I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+-->

@@ -1,0 +1,94 @@
+/* Set About us banner image */
+.jumbotron.bg-image {
+  background-image: url('JohnLenett.png');
+  background-size: cover;
+  background-position: center;
+  color: #f9f7f1;
+}
+
+/* Set Destinations Image */
+.bg-img-d {
+  background-image: url('DestinationsBanner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Set Booking Images */
+.bg-img-b {
+  background-image: url('BookingBanner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-b1 {
+  background-image: url('Single.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-b2 {
+  background-image: url('Family.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* add overlay */
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Accordion Styles */
+.accordion-button:not(.collapsed) {
+  background-color: #303f4e;
+  color: #f9f7f1;
+}
+
+.accordion-button:not(.collapsed)+.accordion-collapse .accordion-body {
+  color: #303f4e;
+}
+
+.accordion-button.collapsed {
+  color: #303f4e;
+}
+
+/* Apply custom border style */
+.custom-border {
+  border: 2px solid #303f4e;
+}
+
+/* Custom Booking Element styles*/
+.table-customBG{
+   background-color: #303f4e;
+}
+
+.bookingForm {
+  color: #303f4e;
+}
+
+#jumboTron{
+  color: #303f4e;
+}
+
+/* Custom Img styles */
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-xxl {
+  width: 100%;     
+  height: 100%;
+  object-fit: cover; 
+}
+
+#imgBanner{
+  background-color: rgba(48, 63, 78, 0.5);
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*
+    Image References: https://www.canva.com/design/DAFqqFbNlfs/Lb3i1lxDKbHL36MP0Yd6UQ/view?utm_content=DAFqqFbNlfs&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel
+    Logo References: https://www.canva.com/design/DAFqvxIJD5I/jOOrhFpRROnqcJ2tgNvOHA/view?utm_content=DAFqvxIJD5I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+-*/

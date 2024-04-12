@@ -1,0 +1,121 @@
+/* To apply custom bg color */
+.bg-custom{
+    background-color: #f9f7f1;
+}
+
+.bg-custom-secondary{
+    background-color: #c9c0b9;
+}
+
+/* custom styles for Nav bar*/
+.navBar-CustomBG{
+    background-color: #303f4e;
+}
+
+.navbar-nav .nav-link{
+    color: #f9f7f1;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #c9c0b9;
+}
+
+.container-fluid .navbar-brand{
+    color: #f9f7f1;
+}
+
+.container-fluid .navbar-brand:hover{
+    color: #c9c0b9;
+}
+
+#searchInput{
+    border-color: #c9c0b9;
+    color: #6c6356;
+}
+
+#searchBtn{
+    border-color: #f9f7f1 ;
+    color: #f9f7f1;
+}
+
+#searchBtn:hover{
+    background-color: #6c6356;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #6c6356; 
+}
+
+/* To apply custom footer styles*/
+.footer-CustomBG{
+    background-color: #303f4e;
+    color: #f9f7f1;
+}
+
+#footList a{
+    color: #f9f7f1;
+}
+
+#footList a:hover{
+    color: #6c6356;
+}
+
+.footList-Custom a{
+    color: #7c7770;
+}
+
+.footList-Custom a:hover{
+    color: #f9f7f1;
+}
+
+/*To apply custom button styles */
+.btn-custom{
+    border-color: #303f4e;
+    background-color: #303f4e;
+    color: #f9f7f1;
+}
+
+.btn-custom:hover{
+    border-color: #5d6369;
+    background-color: #5d6369;
+    color: #f9f7f1;
+}
+
+.btn-custom-secondary{
+    border-color: #f9f7f1;
+    background-color: #f9f7f1;
+    color: #303f4e;
+}
+
+.btn-custom-secondary:hover{
+    border-color: #6c6356;
+    background-color: #6c6356;
+    color: #f9f7f1;
+}
+
+/* To apply custom Banner styles */
+.main-banner{
+    margin-top: 76px;
+}
+
+/* To Apply custom font styles */
+h1{
+    font-family: 'Times New Roman', Times, serif; 
+    color: #303f4e;
+}
+
+h3{
+    color: #303f4e;
+}
+
+.text-custom1{
+    color: #f9f7f1;
+}
+
+.text-custom2{
+    color: #c9c0b9;
+}
+
+.text-custom3{
+    color: #a59e98;
+}

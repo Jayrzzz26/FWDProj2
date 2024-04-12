@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--link Bootstrap and custom CSS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="secondary.css">
+    <title>Destravel</title>
+</head>
+
+<body class="bg-custom">
+    <header>
+        <!--Create Nav bar-->
+        <nav class="navbar navbar-expand-sm navBar-CustomBG fixed-top">
+            <div class="container-fluid">
+                <!--Show Logo with Brand Name-->
+                <a class="navbar-brand" href="#"><img src="DestravelLogo.png" width="50" height="50" class="me-2" alt="Destravel Logo">Destravel</a>
+                <!--Create unordered list for pages-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About&nbspUs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact&nbspUs</a></li>
+                    </ul>
+                    <!--Create Serch input field and button-->
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <!--Main Image-->
+        <section class="container-fluid main-banner py-5 text-center position-relative bg-img-b">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light text-custom1">Destination Packages</h1>
+                    <p class="lead text-custom1">A curated list of the top most visited attractions across the globe in one scroll.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Pills for page directory-->
+        <div class="container-fluid d-flex flex-wrap gap-2 justify-content-center py-5 bg-custom-secondary">
+            <button class="btn btn-custom rounded-pill px-3 my-1" type="button">Destinations</button>
+            <button class="btn btn-custom rounded-pill px-3 my-1" type="button">Flights</button>
+            <button class="btn btn-custom rounded-pill px-3 my-1" type="button">Hotel</button>
+            <button class="btn btn-custom rounded-pill px-3 my-1" type="button">Transportation</button>
+            <button class="btn btn-custom rounded-pill px-3 my-1" type="button">Activities</button>
+            <button class="btn btn-custom rounded-pill px-3 my-1" type="button">My bookings</button>
+        </div>  
+
+        <!--Travel Details with Image and Description-->
+        <div class="container-fluid pb-5">
+            <div class="row">
+                <h1 class="py-2 text-center display-1">Travel Details</h1>
+                <div class="col-xxl-8 pb-2">
+                    <img src="BoracayM.png" alt="Boracay Booking Img" class="img-xxl">
+                </div>
+                <div class="col-xxl-4 px-2 py-2 custom-border d-flex flex-column">
+                    <!--Create form for package description-->
+                    <form class="bookingForm flex-grow-1 d-flex flex-column">
+                        <div class="mb-3">
+                            <label for="typeDestination" class="form-label fw-medium">Destination:</label>
+                            <select name="destinationType" id="typeDestination" class="form-select">
+                                <option value="Boracay">Boracay</option>
+                                <option value="Grand Canyon">Grand Canyon</option>
+                                <option value="Stone Hedge">Stone Hedge</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="departure" class="form-label fw-medium">Date of departure:</label>
+                            <input type="date" id="arrivalB" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="noPax" class="form-label fw-medium">No. of pax:</label>
+                            <input type="number" name="noPeople" id="noPax" value="1" min="1" class="form-control">
+                        </div>
+                        <div id="divPackage" class="mb-3">
+                            <label for="packageType" class="form-label fw-medium">Package:</label>
+                            <div class="form-check">
+                                <input type="radio" name="packageType" id="scPackage" class="form-check-input">
+                                <label for="scPackage" class="form-check-label">Single / Couple</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="packageType" id="ffPackage" class="form-check-input">
+                                <label for="ffPackage" class="form-check-label">Friends / Family</label>
+                            </div>
+                        </div>
+                        <div id="descriptionPackage" class="mb-3">
+                            <p class="form-label fw-medium">Duration of stay:</p>
+                            <p>5 days & 4 nights</p>
+                            <p class="form-label fw-medium">Flight cost:</p>
+                            <p>$350</p>
+                            <p class="form-label fw-medium">Total cost:</p>
+                            <p>$545</p>
+                        </div>
+                        <div class="confirmBooked mt-auto text-center">
+                            <input type="submit" value="Confirm Booking" class="btn btn-custom w-100">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Package details for specific group/individuals-->
+        <div class="row py-5 border-top bg-custom-secondary">
+            <div class="col-12 col-sm-12 col-lg-6 bg-img-b1">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-custom3">Package</strong>
+                        <h3 class="mb-0 text-custom2">Single / Couple Package</h3>
+                        <p class="text-custom1">Sandmaking Competition: $10</p>
+                        <p class="text-custom1">Parasailing: $30 / pax</p>
+                        <p class="text-custom1">Jetski: $50 / pax</p>
+                        <p class="text-custom1">Bar Hoping: $25 / pax</p>
+                        <p class="text-custom1">Accomodation: $20 / pax / night</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block package1-thumbnail"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 bg-img-b2">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2  text-custom3">Package</strong>
+                        <h3 class="mb-0 text-custom2">Friends / Family Package</h3>
+                        <p class="text-custom1">ATV session: $25 / hr</p>
+                        <p class="text-custom1">Banana Boat: $15 / 30 mins</p>
+                        <p class="text-custom1">Eat All You Can Buffet: $20 / pax
+                        <p class="text-custom1">Accomodation: $20 / pax / night</p>
+                        <p class="text-custom1">Transportation: All covered for! *within the island <strong>ONLY</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-2">
+            <span class="h4">5 DAY ITINERARY</span>
+        </div>
+
+        <!--Creating table to showcase itinerary-->
+        <table class="table table-light table-bordered text-center align-middle mb-5">
+            <col class="timeColumn" />
+            <col class="dayColumn" span="5" />
+            <thead>
+                <tr class="table-dark">
+                    <th>Time</th>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="6" class="text-custom1 table-dark">Events can end earlier and you are free to roam the island!</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th class="table-secondary">7:00 AM</th>
+                    <td rowspan="3" colspan="1">Arrival in Boracay & travel to accomodation</td>
+                    <td rowspan="2" colspan="4">Wake up + Breakfast</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">8:00 AM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">9:00 AM</th>
+                    <td rowspan="1" colspan="1">Travel to Island</td>
+                    <td rowspan="1" colspan="3"><strong>FREE TIME</strong></td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">10:00 AM</th>
+                    <td rowspan="2" colspan="1">Check in + Hotel tour</td>
+                    <td rowspan="2" colspan="1">Island tour</td>
+                    <td rowspan="2" colspan="1">Parasailing</td>
+                    <td rowspan="2" colspan="1">Jetski</td>
+                    <td rowspan="2" colspan="1">Sandmaking Competition</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">11:00 AM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">12:00 PM</th>
+                    <td rowspan="1" colspan="5">Lunch</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">13:00 PM</th>
+                    <td rowspan="4" colspan="4"><strong>FREE TIME</strong></td>
+                    <td rowspan="5" colspan="1">Travel to Airport</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">14:00 PM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">15:00 PM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">16:00 PM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">17:00 PM</th>
+                    <td rowspan="1" colspan="4">Sunset watch</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">18:00 PM</th>
+                    <td rowspan="1" colspan="4">Dinner</td>
+                    <td rowspan="6" colspan="1">Flight to SG</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">19:00 PM</th>
+                    <td rowspan="5" colspan="3"><strong>FREE TIME</strong></td>
+                    <td rowspan="5" colspan="1">Bar Hopping</td>
+                </tr>
+                <tr>
+                    <th class="table-secondary">20:00 PM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">21:00 PM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">22:00 PM</th>
+                </tr>
+                <tr>
+                    <th class="table-secondary">23:00 PM+</th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+<!--Responsive footer-->
+    <!--Main list-->
+    <footer class="py-5 px-5 footer-CustomBG">
+        <div class="row">
+            <div class="col-12 col-md-2 mb-3">
+                <ul class="nav flex-column" id="footList">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">BECOME A MEMBER</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">HOT DEALS</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">INSURANCE</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">LOYALTY PROGRAM</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link fw-medium p-0">REFERRALS</a></li>
+                </ul>
+            </div>
+
+            <!--Get Help List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>Get Help</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bookings</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Cancellations</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Payment Options</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!--About Destravel List-->
+            <div class="col-12 col-md-2 mb-3">
+                <h5>About Destravel</h5>
+                <ul class="nav flex-column footList-Custom">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Story</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Partners</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">News</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!--Email Sign up-->
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-custom-secondary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Company Registration-->
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 ps-5 my-4 border-top">
+            <p>© 2023 Destravel Pte. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</html>
+
+<!--
+    Image References: https://www.canva.com/design/DAFqqFbNlfs/Lb3i1lxDKbHL36MP0Yd6UQ/view?utm_content=DAFqqFbNlfs&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel
+    Logo References: https://www.canva.com/design/DAFqvxIJD5I/jOOrhFpRROnqcJ2tgNvOHA/view?utm_content=DAFqvxIJD5I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+-->
